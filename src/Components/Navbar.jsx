@@ -15,11 +15,10 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
       <div className="container">
-        <Link className="navbar-brand d-flex align-items-center" to="/">
+        <Link className="navbar-brand d-flex align-items-end" to="/">
           <img src={logo} alt="My Logo" className="my-logo" />
           <span className="fw-bold" style={{ color: "#48A813" }}>EdenGardenscapes</span>
-        </Link>
-        
+        </Link>  
         {/* Toggle Button */}
         <button
           className="navbar-toggler"

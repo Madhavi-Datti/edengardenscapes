@@ -127,14 +127,14 @@ function Home() {
                   <div className="card-body">
                     <h5 className="card-title">{service.title}</h5>
                     <p className="card-text">{service.description}</p>
-                    <a href="/services" className="btn btn-outline">Know More</a>
+                    <Link to="/services" className="btn btn-outline">Know More</Link>
                   </div>
                 </div>
               </div>
             ))}
           </div>
               <div className="text-center mt-5">
-                 <a href="/services" className="btn btn-custom btn-lg"> More Services</a>
+                 <Link href="/services" className="btn btn-custom btn-lg"> More Services</Link>
                  </div>
         </div>
       </section>

@@ -114,40 +114,34 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-5">
+     {/* Our Journey */}
+     <section className="bg-sandal py-5">
         <div className="container">
-          <h2 className="text-center mb-5">Our Expert Team</h2>
-          <div className="row g-4">
-            {[
-              {
-                name: "Yesu Rathnam",
-                role: "CEO & Manager",
-                image: "/images/photo1.jpg"
-              },
-              {
-                name: "Jaasritha",
-                role: "Garden Designer",
-                image: "/images/photo2.jpg"
-              },
-              {
-                name: "Lithiksha",
-                role: "Lead Landscape Architect",
-                image: "/images/photo3.jpg"
-              }
-            ].map((member, index) => (
-              <div key={index} className="col-md-4">
-                <div className="card border-0 shadow-sm">
-                  <img src={member.image} className="card-img-top" loading="lazy" alt={member.name} style={{height: '300px', objectFit: 'contain'}} />
-                  <div className="card-body text-center">
-                    <h5 className="card-title mb-1">{member.name}</h5>
-                    <p className="card-text text-muted">{member.role}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <h2 className="text-center mb-5">Our Journey</h2>
+          <p className="text-center">Since our inception in 2014, EdenGardenScapes has been dedicated to enhancing outdoor spaces with a perfect blend of creativity and sustainability. Starting as a small team of passionate horticulturists, we have grown into a full-fledged landscaping firm, serving numerous satisfied clients. Over the years, we have expanded our services to incorporate modern designs, innovative techniques, and environmentally friendly solutions.</p>
         </div>
+        {/* Step 3: Steps Timeline */}
+        <div className="container">
+  <div className="row justify-content-center text-center">
+    
+    {[
+      { year: "2014", text: "Founded with a passion for horticulture." },
+      { year: "2016", text: "Adopted modern landscaping techniques." },
+      { year: "2018", text: "Integrated sustainable, eco-friendly solutions." },
+      { year: "2020", text: "Expanded with a strong client base." },
+      { year: "2023", text: "Introduced innovative outdoor designs." },
+      { year: "Present", text: "Always striving for excellence in landscaping." }
+    ].map((item, index) => (
+      <div className="col-6 col-sm-4 col-md-2" key={index}>
+        <div className="rounded-circle bg-color text-white d-flex align-items-center justify-content-center mx-auto round" style={{ width: "80px", height: "80px", fontSize: "20px", boxShadow: "0 4px 8px rgba(0,0,0,0.2)" }}>
+          {item.year}
+        </div>
+        <p className="mt-2">{item.text}</p>
+      </div>
+    ))}
+
+  </div>
+    </div>
       </section>
     </div>
   );

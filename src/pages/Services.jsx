@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shovel, Sprout, TreePine, Hammer, Droplets, Home, Columns, ForkKnife, Sun, Grid} from 'lucide-react';
+import { Link } from 'react-router-dom';
 import '../index.css';
 
 const Services = () => {
@@ -90,7 +91,7 @@ const Services = () => {
                   <h3 className="h4">{service.title}</h3>
                 </div>
                 <p className="text-muted text-justify">{service.description}</p>
-                <a href="/contact" className="btn btn-outline mb-3">Get Quote</a>
+                <Link to="/contact" className="btn btn-outline mb-3">Get Quote</Link>
               </div>
 
               {/* Image will always come after text */}

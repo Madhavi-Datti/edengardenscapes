@@ -1,5 +1,6 @@
 import React from 'react';
 import { Leaf, Users, Award, ThumbsUp, Banknote} from 'lucide-react';
+import { Link } from 'react-router-dom';
 import '../index.css'
 
 function Home() {
@@ -12,7 +13,6 @@ function Home() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh',
-        marginTop: '56px'
       }}>
         <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
         <div className="container position-relative h-100">
@@ -20,7 +20,7 @@ function Home() {
             <div className="col-lg-8 text-white text-center text-lg-start">
               <h1 className="display-3 fw-bold mb-4">Turning Your Garden Ideas Into Reality</h1>
               <p className="lead mb-4">Create your dream garden with EdenGardenscapes. Professional landscaping services tailored to your vision.</p>
-              <a href="/contact" className="btn btn-custom btn-lg">Get Started</a>
+              <Link to="/contact" className="btn btn-custom btn-lg">Get Started</Link>
             </div>
           </div>
         </div>
@@ -28,9 +28,9 @@ function Home() {
 
       {/* Introduction Section */}
       <section className="py-5 position-relative bg-light">
-  <div className="container">
-  <h2 className="text-center mb-5 text-with-lines">About Us</h2>
-    <div className="row align-items-center">
+      <div className="container">
+      <h2 className="text-center mb-5 text-with-lines">About Us</h2>
+      <div className="row align-items-center">
       
       {/* Image Section with Overlapping Effect */}
       <div className="col-lg-6 position-relative">
@@ -39,7 +39,7 @@ function Home() {
             src="images/welcome.jpg" 
             loading="lazy"
             alt="Greenery" 
-            className="img-fluid rounded-2 shadow-lg main-img opacity-75"
+            className="img-fluid rounded-2 shadow-sm main-img opacity-75"
           />
           <img 
             src="/images/welcome.jpg" 
@@ -79,7 +79,6 @@ function Home() {
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>

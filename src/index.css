@@ -66,6 +66,19 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .navbar {
   transition: all 0.3s ease;
 }
@@ -81,7 +94,7 @@ button:focus-visible {
 
 .my-logo {
   width: auto; 
-  height: 40px;
+  height: 38px;
 }
 
 .hero {
@@ -178,6 +191,13 @@ button:focus-visible {
   right: -50px;
   width: 60%;
 }
+@media (max-width: 768px) {
+  .overlay-img {
+    width: 80%;
+    top: 10%; 
+    left: 10%; 
+  }
+}
 .text-with-lines {
   display: flex;
   align-items: center;
@@ -213,7 +233,7 @@ button:focus-visible {
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 370px;
 }
 .bg-img1 {
   position: relative;
@@ -221,7 +241,7 @@ button:focus-visible {
   background-size:cover;
   background-position:center;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 370px;
 }
 .bg-img2 {
   position: relative;
@@ -229,7 +249,7 @@ button:focus-visible {
   background-position:start;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 370px;
 }
 @keyframes slideIn {
   from {
@@ -251,3 +271,11 @@ button:focus-visible {
   height: auto;
 
 }
+.round {
+  transition: transform 0.3s ease;
+}
+
+.round:hover {
+  transform: translateX(-5px);
+}
+

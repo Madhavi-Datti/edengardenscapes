@@ -12,11 +12,11 @@ const Footer = () => {
           <div className="col-lg-4 mb-4 text-center text-lg-start">
             <h5 className="mb-4">EdenGardenScapes</h5>
             <div className="d-flex justify-content-center justify-content-lg-start gap-3">
-              <a href="#" className="text-light"><Instagram size={20} /></a>
-              <a href="#" className="text-light"><Linkedin size={20} /></a>
-              <a href="#" className="text-light"><Facebook size={20} /></a>
-              <a href="#" className="text-light"><Twitter size={20} /></a>
-              <a href="#" className="text-light"><Youtube size={20} /></a>
+              <Link to="https://www.instagram.com/eden_gardenscapes?igsh=cTh5dDVldGZwcXI2" className="text-light"><Instagram size={20} /></Link>
+              <Link to="#" className="text-light"><Linkedin size={20} /></Link>
+              <Link to="https://www.facebook.com/profile.php?id=61553171338482" className="text-light"><Facebook size={20} /></Link>
+              <Link to="#" className="text-light"><Twitter size={20} /></Link>
+              <Link to="#" className="text-light"><Youtube size={20} /></Link>
             </div>
           </div>
 

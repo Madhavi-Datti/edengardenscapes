@@ -1,5 +1,6 @@
 import React from 'react';
 import { TreePine, Leaf, Flower, Sun } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import '../index.css';
 
 const Plants = () => {
@@ -91,7 +92,7 @@ const Plants = () => {
                       <h3 className="h5 card-title mb-0">{plant.name}</h3>
                     </div>
                     <p className="card-text text-muted">{plant.description}</p>
-                    <a href="/contact" className="btn btn-outline">Inquire Now</a>
+                    <Link to="/contact" className="btn btn-outline">Inquire Now</Link>
                   </div>
                 </div>
               </div>

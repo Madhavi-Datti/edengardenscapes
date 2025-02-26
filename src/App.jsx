@@ -8,11 +8,13 @@ import Services from './pages/Services';
 import Plants from './pages/Plants';
 import ContactUs from './pages/ContactUs';
 
+
+
 const App = () => {
   return (
     <Router>
       <Navbar />
-      <div className="container-fluid mt-5 p-0">
+      <div className="container-fluid mt-0 p-0">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

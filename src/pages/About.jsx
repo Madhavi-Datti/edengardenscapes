@@ -4,16 +4,16 @@ import '../index.css'
 
 const About = () => {
   return (
-    <div className="pt-5 mt-5 bg-sandal">
+    <div className="pt-5 bg-sandal">
       {/* Hero Section */}
       <section>
   <div className="container">
     <div className="row">
       <div className="col-lg-6">
-        <h1 className="display-4 mb-4">About EdenGardenScapes</h1>
+        <h1 className="display-4 mb-4">About Eden GardenScapes</h1>
         <p className="lead">Creating Beautiful Garden Spaces Since 2014</p>
         <p className="mb-4 text-justify">
-          At EdenGardenScapes, we specialize in transforming gardens into breathtaking landscapes that seamlessly blend beauty and functionality. Whether it's a cozy garden nook or a grand outdoor space, our expert landscapers and designers craft stunning gardenscaping solutions tailored to your style and needs. With a passion for horticulture and design, we've been shaping extraordinary green spaces since 2014. Our attention to detail ensures that every element, from plant selection to layout, contributes to a harmonious and welcoming environment.
+          At Eden GardenScapes, we specialize in transforming gardens into breathtaking landscapes that seamlessly blend beauty and functionality. Whether it's a cozy garden nook or a grand outdoor space, our expert landscapers and designers craft stunning gardenscaping solutions tailored to your style and needs. With a passion for horticulture and design, we've been shaping extraordinary green spaces since 2014. Our attention to detail ensures that every element, from plant selection to layout, contributes to a harmonious and welcoming environment.
         </p>
         <div className="row mb-3 mt-5 text-left text-md-left">
           <div className="col-6 col-md-3">
@@ -36,7 +36,7 @@ const About = () => {
         <br />
         <br />
         <p>
-          <em>Let EdenGardenScapes turn your garden into a personal oasis - a place where nature's beauty flourishes, and you can escape into serenity. Trust us to create the garden of your dreams, a space that you'll cherish for years to come.</em>
+          <em>Let Eden GardenScapes turn your garden into a personal oasis - a place where nature's beauty flourishes, and you can escape into serenity. Trust us to create the garden of your dreams, a space that you'll cherish for years to come.</em>
         </p>
       </div>
 
@@ -118,7 +118,7 @@ const About = () => {
      <section className="bg-sandal py-5">
         <div className="container">
           <h2 className="text-center mb-5">Our Journey</h2>
-          <p className="text-center">Since our inception in 2014, EdenGardenScapes has been dedicated to enhancing outdoor spaces with a perfect blend of creativity and sustainability. Starting as a small team of passionate horticulturists, we have grown into a full-fledged landscaping firm, serving numerous satisfied clients. Over the years, we have expanded our services to incorporate modern designs, innovative techniques, and environmentally friendly solutions.</p>
+          <p className="text-center">Since our inception in 2014, Eden GardenScapes has been dedicated to enhancing outdoor spaces with a perfect blend of creativity and sustainability. Starting as a small team of passionate horticulturists, we have grown into a full-fledged landscaping firm, serving numerous satisfied clients. Over the years, we have expanded our services to incorporate modern designs, innovative techniques, and environmentally friendly solutions.</p>
         </div>
         {/* Step 3: Steps Timeline */}
         <div className="container">
@@ -133,7 +133,7 @@ const About = () => {
       { year: "Present", text: "Always striving for excellence in landscaping." }
     ].map((item, index) => (
       <div className="col-6 col-sm-4 col-md-2" key={index}>
-        <div className="rounded-circle bg-color text-white d-flex align-items-center justify-content-center mx-auto round" style={{ width: "80px", height: "80px", fontSize: "20px", boxShadow: "0 4px 8px rgba(0,0,0,0.2)" }}>
+        <div className="rounded-circle bg-color text-white d-flex align-items-center justify-content-center mx-auto round" style={{ width: "80px", height: "80px", fontSize: "20px", boxShadow: "0px 0px 15px rgba(3, 3, 3, 0.99); " }}>
           {item.year}
         </div>
         <p className="mt-2">{item.text}</p>

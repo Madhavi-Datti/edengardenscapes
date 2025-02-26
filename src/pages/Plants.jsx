@@ -1,5 +1,5 @@
 import React from 'react';
-import { TreePine, Leaf, Flower, Sun } from 'lucide-react';
+import { Leaf, Flower, Sun } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import '../index.css';
 
@@ -64,14 +64,16 @@ const Plants = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-img1 py-5">
-        <div className="container">
-          <div className="text-center text-color bg-color w-50 float-end text-white">
-            <h1 className="display-4 fw-bold mb-4 slide-text">Our Plants</h1>
-            <p className="lead fw-bold mb-4 slide-text">Explore our range of plants perfect for any landscape</p>
-          </div>
-        </div>
-      </section>
+      <section className="plants-section py-5">
+  <div className="container">
+    <div className="services-content text-center text-white w-50 float-end">
+      <h3 className="display-5 fw-bold slide-text">Our Plants</h3>
+      <p className="lead fw-bold slide-text">
+      Explore our range of plants perfect for any landscape
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* Plants Grid */}
       <section className="py-5">
@@ -92,7 +94,7 @@ const Plants = () => {
                       <h3 className="h5 card-title mb-0">{plant.name}</h3>
                     </div>
                     <p className="card-text text-muted">{plant.description}</p>
-                    <Link to="/contact" className="btn btn-outline">Inquire Now</Link>
+                    <Link to="/contact" className="btn btn-outline" onClick={() => window.scrollTo(0, 0)}>Inquire Now</Link>
                   </div>
                 </div>
               </div>
@@ -105,3 +107,5 @@ const Plants = () => {
 };
 
 export default Plants;
+
+

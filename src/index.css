@@ -1,10 +1,9 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+:root {
+  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #ffffff;
   background-color: #242424;
 
   font-synthesis: none;
@@ -13,107 +12,83 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
-body {
-  margin: 0;
-  padding: 0;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 * {
   box-sizing: border-box;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto; 
+  overflow-x: hidden; 
+}
 
 .container {
-  max-width: 100%;
-  overflow-x: hidden;
+  width: 100%;
 }
 .navbar {
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(36, 225, 7, 0.468);
   transition: all 0.3s ease;
+  z-index: 1;
 }
-
-.navbar-brand {
-  font-size: 1.5rem;
+.navbar:hover {
+  background-color: #1c4306  !important;
 }
-
-.navbar-brand span {
-  font-Size: 1.5rem;
-
-}
-
-.my-logo {
-  width: auto; 
-  height: 40px;
-}
-
-.hero {
-  position: relative;
-  background-attachment: fixed;
+.navbar-nav .nav-link:hover,
+.navbar-brand span:hover {
+  color: #9cf120 !important;
 }
 .nav-link {
   color: #48A813 !important; 
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
 }
-
 .nav-link:visited, 
 .nav-link:focus, 
 .nav-link:active {
   color: #398d0c !important; 
   font-weight: 500;
 }
+
 .nav-link:hover {
   color: #339300 !important; 
 }
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 0.5rem;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  color: #48A813 !important; 
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #48A813 !important; 
+  color: white !important; 
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .btn-custom {
   background-color: #48A813 !important;
   color: white !important;
@@ -124,7 +99,7 @@ body {
 }
 
 .btn-custom:hover {
-  background-color: #3C8E11 !important;
+  background-color: #9cf120 !important;
 }
 
 .btn-custom:active,
@@ -149,6 +124,10 @@ body {
   color: #fff !important; 
   border-color: #3C8E11 !important;
 }
+.hero {
+  position: relative;
+  background-attachment: fixed;
+}
 
 .text-color{
   color: #48A813;
@@ -164,7 +143,17 @@ body {
 
 .footer-color{
   background: linear-gradient(to bottom, #48A813, #3C8C10); 
-
+}
+.footer-logo {
+  filter: brightness(0) invert(1); 
+  height: 240px; 
+  display: block; 
+  margin-left: 0; 
+  padding: 0;
+  
+  @media (max-width: 576px) { 
+    margin: 0 auto; 
+  }
 }
 .card {
   transition: transform 0.3s ease;
@@ -184,7 +173,6 @@ body {
   width: 100%;
   border-radius: 5px;
 }
-
 .overlay-img {
   position: absolute;
   bottom: -50px;
@@ -226,46 +214,6 @@ body {
 .bg-card{
   background-color: #F6F5F1;
 }
-
-.bg-img {
-  position: relative;
-  background-image: url('/images/services2.jpg');
-  background-size:cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 370px;
-}
-.bg-img1 {
-  position: relative;
-  background-image: url('/images/our_plants.jpg');
-  background-size:cover;
-  background-position:center;
-  background-repeat: no-repeat;
-  height: 370px;
-}
-.bg-img2 {
-  position: relative;
-  background-image: url('/images/contact.png');
-  background-position:start;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 370px;
-}
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-300px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-text {
-  animation: slideIn 0.5s ease-in-out;
-}
-
 #galleryCarousel{
   width:100%;
   height: auto;
@@ -278,4 +226,155 @@ body {
 .round:hover {
   transform: translateX(-5px);
 }
+
+.glowing-shadow {
+  box-shadow: 0px 0px 15px rgba(27, 27, 27, 0.685); 
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.glowing-shadow:hover {
+  box-shadow: 0px 0px 25px rgba(22, 22, 22, 0.9); 
+  transform: translateY(-2px);
+}
+.social-link {
+  color: #ffffff; 
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.social-link:hover {
+  transform: scale(1.2); 
+}
+
+.instagram:hover {
+  color: #E4405F; 
+}
+
+.facebook:hover {
+  color: #1877F2; 
+}
+
+.youtube:hover {
+  color: #FF0000; 
+}
+
+.quick-link {
+  text-decoration: none;
+  color: #f7f9f6;
+  transition: color 0.3s ease-in-out, transform 0.3s;
+}
+
+.quick-link:hover {
+  color: #0652f4; 
+  text-decoration: underline;
+}
+
+.services-section {
+  position: relative;
+  background: url('../images/services2.jpg') center/cover no-repeat;
+  height: 60vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.bg-contact {
+  position: relative;
+  background: url('../images/contact.jpg');
+  background-position:start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.plants-section {
+  position: relative;
+  background: url('../images/plant.jpg');
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.services-content {
+  position: relative;
+  background: rgb(72, 168, 19); 
+  padding: 20px 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.services-content h3 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+  letter-spacing: 1.5px;
+  animation: textFade 1.5s ease-in-out;
+}
+
+.services-content p {
+  font-style: italic;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  animation: textFade 2s ease-in-out;
+}
+
+@keyframes zoomBackground {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+.services-section:hover {
+  animation: zoomBackground 5s alternate infinite;
+}
+
+@keyframes textFade {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.hero-section {
+  opacity: 0;
+  transform: translateX(-200px);
+  animation: slideInLeft 1s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Glowing Effect for Text */
+.hero-section h1, 
+.hero-section p {
+  animation: textGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.374), 0 0 10px rgba(60, 255, 0, 0.534);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(15, 250, 54, 0.7);
+  }
+}
+
+
 

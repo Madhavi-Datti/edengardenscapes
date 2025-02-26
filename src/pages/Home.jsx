@@ -1,5 +1,5 @@
 import React from 'react';
-import { Leaf, Users, Award, ThumbsUp, Banknote} from 'lucide-react';
+import { Leaf, Users, Award, ThumbsUp, Banknote, TreePine} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import '../index.css'
 
@@ -17,10 +17,10 @@ function Home() {
         <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
         <div className="container position-relative h-100">
           <div className="row h-100 align-items-center">
-            <div className="col-lg-8 text-white text-center text-lg-start">
-              <h1 className="display-3 fw-bold mb-4">Turning Your Garden Ideas Into Reality</h1>
-              <p className="lead mb-4">Create your dream garden with EdenGardenscapes. Professional landscaping services tailored to your vision.</p>
-              <Link to="/contact" className="btn btn-custom btn-lg">Get Started</Link>
+            <div className="col-lg-8 text-white text-center text-lg-start hero-section">
+            <h1 className="display-3 fw-bold mb-4">Turning Your Garden Ideas Into Reality</h1>
+            <p className="lead mb-4">Create your dream garden with Eden Gardenscapes. Professional landscaping services tailored to your vision.</p>
+              <Link to="/contact" className="btn btn-custom btn-lg" onClick={() => window.scrollTo(0, 0)}>Get Started</Link>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ function Home() {
 
       {/* Text Content */}
       <div className="col-lg-6">
-        <h2 className="display-5 mb-4 mt-5">Welcome to EdenGardenscapes</h2>
+        <h2 className="display-5 mb-4 mt-5">Welcome to Eden Gardenscapes</h2>
         <p className="lead">We bring your landscaping dreams to life with expert design, quality materials, and sustainable practices.</p>
         
         <div className="d-flex align-items-center mt-3">
@@ -127,14 +127,14 @@ function Home() {
                   <div className="card-body">
                     <h5 className="card-title">{service.title}</h5>
                     <p className="card-text">{service.description}</p>
-                    <Link to="/services" className="btn btn-outline">Know More</Link>
+                    <Link to="/services" className="btn btn-outline" onClick={() => window.scrollTo(0, 0)}>Know More</Link>
                   </div>
                 </div>
               </div>
             ))}
           </div>
               <div className="text-center mt-5">
-                 <Link href="/services" className="btn btn-custom btn-lg"> More Services</Link>
+                 <Link to="/services" className="btn btn-custom btn-lg" onClick={() => window.scrollTo(0, 0)}> More Services</Link>
                  </div>
         </div>
       </section>
@@ -147,13 +147,15 @@ function Home() {
             {[
               { icon: Users, title: "Happy Clients", value: "100+",},
               { icon: Award, title: "Years Experience", value: "10+" },
-              { icon: ThumbsUp, title: "Projects Completed", value: "50+" }
+              { icon: ThumbsUp, title: "Projects Completed", value: "50+" },
+              { icon: TreePine, title: "Trees Planted", value: "100000+" }
+
             ].map((stat, index) => (
-              <div key={index} className="col-md-4">
+              <div key={index} className="col-md-3">
                 <div className="p-4 rounded-3 bg-card">
-                  <stat.icon size={40} className="text-color mb-3" />
+                  <stat.icon size={34} className="text-color mb-3" />
                   <h3 className="h2 mb-2">{stat.value}</h3>
-                  <p className="text-muted mb-0">{stat.title}</p>
+                  <p className="mb-0">{stat.title}</p>
                 </div>
               </div>
             ))}
@@ -175,24 +177,24 @@ function Home() {
     <h2 className="text-center mb-5">What Our Clients Say</h2>
     <div className="row">
       <div className="col-md-4 mb-3">
-        <div className="card border-0 shadow-sm">
-          <div className="card-body bg-color">
-            <p className="card-text text-white">"EdenGardenscapes transformed my backyard into a beautiful garden. Their attention to detail is remarkable!"</p>
+        <div className="card border-0 glowing-shadow">
+          <div className="card-body rounded-2 bg-color">
+            <p className="card-text text-white">"Eden Gardenscapes transformed my backyard into a beautiful garden. Their attention to detail is remarkable!"</p>
             <footer className="blockquote-footer text-white">Srinivas, Homeowner</footer>
           </div>
         </div>
       </div>
       <div className="col-md-4 mb-3">
-        <div className="card border-0 shadow-sm">
-          <div className="card-body bg-color">
-            <p className="card-text text-white">"The team at EdenGardenscapes provided excellent service and helped me achieve my dream garden!"</p>
+        <div className="card border-0 glowing-shadow">
+          <div className="card-body rounded-2 bg-color">
+            <p className="card-text text-white">"The team at Eden Gardenscapes provided excellent service and helped me achieve my dream garden!"</p>
             <footer className="blockquote-footer text-white">Kalpana, Garden Enthusiast</footer>
           </div>
         </div>
       </div>
       <div className="col-md-4 mb-3">
-        <div className="card border-0 shadow-sm">
-          <div className="card-body bg-color">
+        <div className="card border-0 glowing-shadow">
+          <div className="card-body rounded-2 bg-color">
             <p className="card-text text-white">"Professional, reliable, and always bringing new ideas. Couldn't be happier with the result!"</p>
             <footer className="blockquote-footer text-white">Dinesh, Business Owner</footer>
           </div>
@@ -249,9 +251,6 @@ function Home() {
     </div>
   </div>
 </section>
-
-
-
 
     </div>
   );

@@ -69,12 +69,13 @@ const Services = () => {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-img py-5">
+<section className="services-section py-5">
   <div className="container">
-    <div className="text-center bg-color w-50 float-end text-white">
-    <h1 className="display-4 fw-bold mb-4 slide-text">Our Services</h1>
-<p className="lead fw-bold mb-4 slide-text">we don’t just build gardens – we create living experiences</p>
+    <div className="services-content text-center text-white w-50 float-end">
+      <h3 className="display-5 fw-bold slide-text">Our Services</h3>
+      <p className="lead fw-bold slide-text">
+        We don’t just build gardens – we create living experiences
+      </p>
     </div>
   </div>
 </section>
@@ -91,7 +92,7 @@ const Services = () => {
                   <h3 className="h4">{service.title}</h3>
                 </div>
                 <p className="text-muted text-justify">{service.description}</p>
-                <Link to="/contact" className="btn btn-outline mb-3">Get Quote</Link>
+                <Link to="/contact" className="btn btn-outline mb-3" onClick={() => window.scrollTo(0, 0)}>Get Quote</Link>
               </div>
 
               {/* Image will always come after text */}

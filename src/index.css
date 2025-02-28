@@ -33,7 +33,7 @@ html, body {
 }
 .navbar {
   padding: 1rem;
-  box-shadow: 0 2px 4px rgba(36, 225, 7, 0.468);
+  box-shadow: 0 2px 4px rgba(8, 8, 8, 0.347);
   transition: all 0.3s ease;
   z-index: 1;
 }
@@ -304,7 +304,8 @@ html, body {
 .services-content {
   position: relative;
   background: rgb(72, 168, 19); 
-  padding: 20px 40px;
+  padding: 20px;
+  margin-top: 100px;
   border-radius: 10px;
   backdrop-filter: blur(10px);
   animation: fadeIn 1s ease-in-out;
@@ -375,6 +376,3 @@ html, body {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(15, 250, 54, 0.7);
   }
 }
-
-
-

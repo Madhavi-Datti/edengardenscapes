@@ -66,9 +66,9 @@ const Plants = () => {
       {/* Hero Section */}
       <section className="plants-section py-5">
   <div className="container">
-    <div className="services-content text-center text-white w-50 float-end">
-      <h3 className="display-5 fw-bold slide-text">Our Plants</h3>
-      <p className="lead fw-bold slide-text">
+    <div className="services-content text-center text-white w-50 float-end px-3 mx-auto text-wrap">
+      <h6 className="display-6 fw-bold slide-text">Our Plants</h6>
+      <p className="fw-bold slide-text">
       Explore our range of plants perfect for any landscape
       </p>
     </div>

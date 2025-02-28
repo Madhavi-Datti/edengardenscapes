@@ -99,9 +99,9 @@ const ContactUs = () => {
       {/* Banner Section */}
       <section className="bg-contact py-5">
   <div className="container">
-    <div className="services-content text-center text-white w-50 float-end">
-      <h3 className="display-5 fw-bold slide-text">Contact Us</h3>
-      <p className="lead fw-bold slide-text">
+    <div className="services-content text-center text-white float-end w-50 mx-auto text-wrap">
+      <h6 className="display-6 fw-bold slide-text">Contact Us</h6>
+      <p className="fw-bold slide-text">
       We would love to hear from you!
       </p>
     </div>

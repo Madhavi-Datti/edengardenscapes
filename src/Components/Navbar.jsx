@@ -15,14 +15,14 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <div className="container">
-      <Link className="navbar-brand d-flex align-items-center" to="/">
+    <Link className="navbar-brand d-flex align-items-center" to="/">
   <img src={logo} alt="My Logo" style={{ height: "60px" }} />
   <span 
-    className="fw-bold" 
+    className="fw-bold ms-0" 
     style={{ 
       color: "#48A813",
       fontFamily:"Playfair Display, serif",
-      fontSize: "1.6rem",
+      fontSize: "1.5rem",
       paddingTop: "10px"
     }}
   >

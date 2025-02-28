@@ -52,8 +52,8 @@ function Home() {
 
       {/* Text Content */}
       <div className="col-lg-6">
-        <h2 className="display-5 mb-4 mt-5">Welcome to Eden Gardenscapes</h2>
-        <p className="lead">We bring your landscaping dreams to life with expert design, quality materials, and sustainable practices.</p>
+        <h2 className="display-5 mb-4 mt-5 text-center text-lg-start">Welcome to Eden Gardenscapes</h2>
+        <p className="lead text-justify">We bring your landscaping dreams to life with expert design, quality materials, and sustainable practices.</p>
         
         <div className="d-flex align-items-center mt-3">
           <Leaf className="icon-style me-3 text-color" size={28} />
@@ -126,7 +126,7 @@ function Home() {
                   <img src={service.image} className="card-img-top" loading="lazy" alt={service.title} style={{height: '200px', objectFit: 'cover'}} />
                   <div className="card-body">
                     <h5 className="card-title">{service.title}</h5>
-                    <p className="card-text">{service.description}</p>
+                    <p className="card-text text-justify">{service.description}</p>
                     <Link to="/services" className="btn btn-outline" onClick={() => window.scrollTo(0, 0)}>Know More</Link>
                   </div>
                 </div>

@@ -61,7 +61,7 @@ const About = () => {
                 <div className="card-body p-4 ">
                   <Heart className="text-color mb-3" size={40} />
                   <h3 className="card-title">Our Vision</h3>
-                  <p className="card-text ">To be the premier provider of sustainable and innovative gardenscaping solutions, transforming spaces into lush, vibrant retreats that inspire and connect people with nature.</p>
+                  <p className="card-text text-justify">To be the premier provider of sustainable and innovative gardenscaping solutions, transforming spaces into lush, vibrant retreats that inspire and connect people with nature.</p>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ const About = () => {
                 <div className="card-body p-4 ">
                   <Leaf className="text-color mb-3" size={40} />
                   <h3 className="card-title">Our Mission</h3>
-                  <p className="card-text">To deliver exceptional gardenscaping services that exceed client expectations while promoting environmental stewardship and sustainable practices.</p>
+                  <p className="card-text text-justify">To deliver exceptional gardenscaping services that exceed client expectations while promoting environmental stewardship and sustainable practices.</p>
                 </div>
               </div>
             </div>
@@ -118,7 +118,7 @@ const About = () => {
      <section className="bg-sandal py-5">
         <div className="container">
           <h2 className="text-center mb-5">Our Journey</h2>
-          <p className="text-center">Since our inception in 2014, Eden GardenScapes has been dedicated to enhancing outdoor spaces with a perfect blend of creativity and sustainability. Starting as a small team of passionate horticulturists, we have grown into a full-fledged landscaping firm, serving numerous satisfied clients. Over the years, we have expanded our services to incorporate modern designs, innovative techniques, and environmentally friendly solutions.</p>
+          <p className="text-justify">Since our inception in 2014, Eden GardenScapes has been dedicated to enhancing outdoor spaces with a perfect blend of creativity and sustainability. Starting as a small team of passionate horticulturists, we have grown into a full-fledged landscaping firm, serving numerous satisfied clients. Over the years, we have expanded our services to incorporate modern designs, innovative techniques, and environmentally friendly solutions.</p>
         </div>
         {/* Step 3: Steps Timeline */}
         <div className="container">

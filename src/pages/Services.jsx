@@ -71,9 +71,9 @@ const Services = () => {
     <div>
 <section className="services-section py-5">
   <div className="container">
-    <div className="services-content text-center text-white w-50 float-end">
-      <h3 className="display-5 fw-bold slide-text">Our Services</h3>
-      <p className="lead fw-bold slide-text">
+    <div className="services-content text-center text-white w-50 float-end px-3 mx-auto text-wrap">
+      <h6 className="display-6 fw-bold slide-text">Our Services</h6>
+      <p className="fw-bold slide-text">
         We don’t just build gardens – we create living experiences
       </p>
     </div>

@@ -8,13 +8,13 @@ function Home() {
     <div>
       {/* Hero Section */}
       <section className="hero position-relative" style={{
-        backgroundImage: 'url("/images/hero.jpg")',
+        backgroundImage: 'url("/images/hero4.jpg")',
         loading: 'lazy',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         height: '100vh',
       }}>
-        <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
+        <div className="position-absolute top-0 start-0 w-100 h-100"></div>
         <div className="container position-relative h-100">
           <div className="row h-100 align-items-center">
             <div className="col-lg-8 text-white text-center text-lg-start hero-section">
@@ -53,7 +53,7 @@ function Home() {
       {/* Text Content */}
       <div className="col-lg-6">
         <h2 className="display-5 mb-4 mt-5 text-center text-lg-start">Welcome to Eden Gardenscapes</h2>
-        <p className="lead text-justify">We bring your landscaping dreams to life with expert design, quality materials, and sustainable practices.</p>
+        <p className="lead text-justify">We bring your landscaping dreams to life with innovative  design, quality materials, and eco-friendly solutions.</p>
         
         <div className="d-flex align-items-center mt-3">
           <Leaf className="icon-style me-3 text-color" size={28} />
@@ -140,7 +140,7 @@ function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-5">
+      <section className="py-5 bg-light">
         <div className="container">
         <h2 className="text-center mb-5 text-with-lines">Why Choose Us</h2>
           <div className="row text-center g-4">
@@ -152,18 +152,45 @@ function Home() {
 
             ].map((stat, index) => (
               <div key={index} className="col-md-3">
-                <div className="p-4 rounded-3 bg-card">
-                  <stat.icon size={34} className="text-color mb-3" />
-                  <h3 className="h2 mb-2">{stat.value}</h3>
-                  <p className="mb-0">{stat.title}</p>
+                <div className="p-4 rounded-3 bg-color glowing-shadow">
+                  <stat.icon size={35} className="text-white mb-3" />
+                  <h3 className="h2 mb-2 text-white text-center">{stat.value}</h3>
+                  <p className="Lead mb-0 text-white text-center" style={{ fontSize: "18px"}}>{stat.title}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+            {/* Our Clients Section */}
+            <section className="py-5 bg-light">
+  <div className="container">
+    <h2 className="text-center mb-5 text-with-lines">Our Clients</h2>
+    <div className="row text-center g-4 custom-ms-lg">
+      {[
+        "/images/decca-copy.png",
+        "/images/nakshatra.png",
+        "/images/paramount.png",
+        "/images/tracks.png",
+        "/images/back_bencher.png",
+      ].map((logo, index) => (
+        <div key={index} className="col-md-2">
+          <div className="p-3 rounded-3 bg-white shadow-sm">
+            <img
+              src={logo}
+              alt={`Client ${index + 1}`}
+              className="img-fluid"
+              style={{ height: "100px", objectFit: "contain" }}
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
-      <section className="py-5" style={{ 
+      <section className="py-5" 
+      style={{ 
   backgroundImage: 'url("/images/why_bg.jpg")', 
   loading:'lazy',
   backgroundSize: 'cover', 
@@ -172,7 +199,8 @@ function Home() {
   justifyContent: 'center',
   alignItems: 'center',
   textAlign: 'center'
-}}>
+}}
+>
   <div className="container">
     <h2 className="text-center mb-5">What Our Clients Say</h2>
     <div className="row">

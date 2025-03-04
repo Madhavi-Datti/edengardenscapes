@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
-import logo from '../assets/logo.png';
+import logo_transparent from '../assets/logo_transparent.png';
 import '../index.css';
 
 const Navbar = () => {
@@ -14,16 +14,17 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
-      <div className="container">
+      <div className="container mb-2">
     <Link className="navbar-brand d-flex align-items-center" to="/">
-  <img src={logo} alt="My Logo" style={{ height: "60px" }} />
+  <img src={logo_transparent} alt="My Logo" className="ms-0"
+  style={{ height: "40px" }} />
   <span 
     className="fw-bold ms-0" 
     style={{ 
       color: "#48A813",
       fontFamily:"Playfair Display, serif",
-      fontSize: "1.5rem",
-      paddingTop: "10px"
+      fontSize: "31px",
+      paddingTop: "15px"
     }}
   >
     Eden Gardenscapes
@@ -41,13 +42,13 @@ const Navbar = () => {
             backgroundColor: "transparent",
           }}
         >
-          {isOpen ? <X size={24} style={{ color: "#9cf120" }} /> : <Menu size={24} style={{ color: "#9cf120" }} />}
+          {isOpen ? <X size={22} style={{ color: "#9cf120" }} /> : <Menu size={22} style={{ color: "#9cf120" }} />}
 
         </button>
 
         {/* Navbar Links */}
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`}>
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0" style={{ paddingTop: "10px" }}>
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0" style={{ paddingTop: "15px"}}>
             <li className="nav-item">
               <Link className="nav-link active" style={{ color: '#48A813' }} to="/" onClick={() => setIsOpen(false)}>Home</Link>
             </li>

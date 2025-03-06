@@ -49,7 +49,7 @@ const ContactUs = () => {
 
     setIsSubmitting(true);
 
-    const SHEETDB_API_URL = "https://sheetdb.io/api/v1/7nksmzigjhcm4";
+    const SHEETDB_API_URL = "https://sheetdb.io/api/v1/fphj7e1oda62g";
 
     try {
       const response = await axios.post(SHEETDB_API_URL, formData, {

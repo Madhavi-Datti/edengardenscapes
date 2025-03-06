@@ -7,24 +7,34 @@ function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="hero position-relative" style={{
-        backgroundImage: 'url("/images/hero4.jpg")',
-        loading: 'lazy',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        height: '100vh',
-      }}>
-        <div className="position-absolute top-0 start-0 w-100 h-100"></div>
-        <div className="container position-relative h-100">
-          <div className="row h-100 align-items-center">
-            <div className="col-lg-8 text-white text-center text-lg-start hero-section">
-            <h1 className="display-3 fw-bold mb-4">Turning Your Garden Ideas Into Reality</h1>
-            <p className="lead mb-4">Create your dream garden with Eden Gardenscapes. Professional landscaping services tailored to your vision.</p>
-              <Link to="/contact" className="btn btn-custom btn-lg" onClick={() => window.scrollTo(0, 0)}>Get Started</Link>
-            </div>
-          </div>
-        </div>
-      </section>
+  <section className="hero position-relative" style={{ height: '100vh' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="position-absolute top-0 start-0 w-100 h-100 px-0 object-fit-cover"
+  >
+    <source src="/images/flower1_video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  
+  <div className="position-absolute top-0 start-0 w-100 h-100 bg-overlay"></div>
+
+  <div className="container position-relative h-100">
+    <div className="row h-100 align-items-center">
+      <div className="col-lg-8 text-white text-center text-lg-start hero-section">
+        <h1 className="display-3 fw-bold mb-4">Turning Your Garden Ideas Into Reality</h1>
+        <p className="lead mb-4">
+          Create your dream garden with Eden Gardenscapes. Professional landscaping services tailored to your vision.
+        </p>
+        <Link to="/contact" className="btn btn-custom btn-lg" onClick={() => window.scrollTo(0, 0)}>
+          Get Started
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Introduction Section */}
       <section className="py-5 position-relative bg-light">

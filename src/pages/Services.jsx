@@ -64,6 +64,12 @@ const Services = () => {
       title: "Vegetable Garden",
       description: "Start your own homegrown vegetable garden with our expert assistance. We help you select seasonal vegetables that thrive in your climate. Our team provides organic soil, fertilizers, and composting techniques for healthy produce. We design raised beds, container gardens, or vertical vegetable patches. Pest control and companion planting ensure a chemical-free harvest. Regular maintenance and watering schedules keep plants fresh and productive. Experience the joy of growing your own fresh vegetables. Enjoy nutritious, homegrown food with our professional vegetable garden services.",
       image: "/images/vegitable_garden.jpg"
+    },
+    {
+      icon: Home,
+      title: "Villa Garden",
+      description:"Transform your villa into a lush green retreat with our premium villa garden services. We create stunning landscapes that complement your villa’s architecture and outdoor space. Whether it's a vibrant flower garden, a serene meditation corner, or a fully customized backyard oasis, we bring your vision to life. Our experts carefully select plants that thrive in your climate and require minimal upkeep. We provide tailored solutions, including lawn care, irrigation systems, and seasonal plant maintenance. Enhance your villa’s beauty with elegant greenery, water features, and garden decor. Experience the luxury of nature right at your doorstep with our expert gardening solutions." ,
+      image: "/images/villa_garden.jpg"
     }
   ];
 

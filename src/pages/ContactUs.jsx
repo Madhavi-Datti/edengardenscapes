@@ -149,7 +149,7 @@ const ContactUs = () => {
               <h3 className="mb-4">Our Contact Information</h3>
               <ul className="list-unstyled">
                 <li className="mb-2"><strong>Email:</strong> edengardenscapes@gmail.com</li>
-                <li className="mb-2"><strong>Phone:</strong> +91 9392947780</li>
+                <li className="mb-2"><strong>Phone:</strong> +91 8184848680</li>
                 <li className="mb-2"><strong>Address:</strong> Hyderabad, Telangana</li>
               </ul>
 

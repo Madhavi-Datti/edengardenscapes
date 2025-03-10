@@ -98,7 +98,7 @@ const Services = () => {
                   <h3 className="h4">{service.title}</h3>
                 </div>
                 <p className="text-muted text-justify">{service.description}</p>
-                <Link to="/contact" className="btn btn-outline mb-3" onClick={() => window.scrollTo(0, 0)}>Get Quote</Link>
+                <Link to="/contact" className="btn btn-outline mb-3">Get Quote</Link>
               </div>
 
               {/* Image will always come after text */}

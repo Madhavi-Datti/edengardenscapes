@@ -35,7 +35,7 @@ const Footer = () => {
               </div>
               <div className="d-flex align-items-center">
                 <Phone size={18} className="me-2" />
-                <span>+91 9392947780, +91 9281455780</span>
+                <span>+91 8184848680, +91 8184848681</span>
               </div>
               <div className="d-flex align-items-center">
                 <MapPin size={18} className="me-2" />
@@ -43,7 +43,7 @@ const Footer = () => {
               </div>
               <div className="d-flex align-items-center">
                 <MessageCircle size={18} className="me-2" />
-                <span>9392947780</span>
+                <span>8184848680</span>
               </div>
               <div className="d-flex align-items-center">
                 <Clock size={18} className="me-2" />
@@ -57,22 +57,22 @@ const Footer = () => {
             <h5 className="mb-4">Quick Links</h5>
             <ul className="list-unstyled d-flex flex-column gap-3 align-items-center align-items-lg-start">
               <li>
-                <Link to="/services" className="quick-link" onClick={() => window.scrollTo(0, 0)}>
+                <Link to="/services" className="quick-link">
                   Our Services
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="quick-link" onClick={() => window.scrollTo(0, 0)}>
+                <Link to="/about" className="quick-link">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/plants" className="quick-link" onClick={() => window.scrollTo(0, 0)}>
+                <Link to="/plants" className="quick-link">
                   Plant Gallery
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="quick-link" onClick={() => window.scrollTo(0, 0)}>
+                <Link to="/contact" className="quick-link">
                   Get a Quote
                 </Link>
               </li>

@@ -28,7 +28,7 @@ function Home() {
         <p className="lead mb-4">
           Create your dream garden with Eden Gardenscapes. Professional landscaping services tailored to your vision.
         </p>
-        <Link to="/contact" className="btn btn-custom btn-lg" onClick={() => window.scrollTo(0, 0)}>
+        <Link to="/contact" className="btn btn-custom btn-lg">
           Get Started
         </Link>
       </div>
@@ -137,20 +137,20 @@ function Home() {
                   <div className="card-body">
                     <h5 className="card-title">{service.title}</h5>
                     <p className="card-text text-justify">{service.description}</p>
-                    <Link to="/services" className="btn btn-outline" onClick={() => window.scrollTo(0, 0)}>Know More</Link>
+                    <Link to="/services" className="btn btn-outline">Know More</Link>
                   </div>
                 </div>
               </div>
             ))}
           </div>
               <div className="text-center mt-5">
-                 <Link to="/services" className="btn btn-custom btn-lg" onClick={() => window.scrollTo(0, 0)}> More Services</Link>
+                 <Link to="/services" className="btn btn-custom btn-lg"> More Services</Link>
                  </div>
         </div>
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-5 bg-light">
+ <section className="py-5 bg-light">
         <div className="container">
         <h2 className="text-center mb-5 text-with-lines">Why Choose Us</h2>
           <div className="row text-center g-4">

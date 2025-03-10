@@ -102,7 +102,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className="btn btn-custom ms-lg-2 rounded-pill" to="tel:9281455780" onClick={() => setIsOpen(false)}>
-                <Phone size={17} className="me-1" /> Call now: 9281455780
+                <Phone size={17} className="me-1" /> Call now: 8184848680
               </Link>
             </li>
           </ul>

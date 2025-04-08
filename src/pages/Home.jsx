@@ -263,9 +263,6 @@ function Home() {
           <img src="/images/work13.jpg" loading="lazy" alt="Gallery Image 5" className="d-block w-100 img-fluid rounded shadow" />
         </div>
         <div className="carousel-item">
-          <img src="/images/work14.jpg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
-        </div>
-        <div className="carousel-item">
           <img src="/images/work17.jpg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
         </div>
         <div className="carousel-item">

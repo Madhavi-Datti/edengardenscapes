@@ -92,7 +92,7 @@ const Footer = () => {
               >
                 <Facebook size={24} />
               </Link>
-              <Link to="#" className="social-link youtube">
+              <Link to="https://www.youtube.com/@Edengardenscapes" className="social-link youtube">
                 <Youtube size={24} />
               </Link>
             </div>

@@ -171,20 +171,18 @@ function Home() {
             ))}
           </div>
         </div>
-      </section>
-            {/* Our Clients Section */}
-            <section className="py-5 bg-light">
+        </section>
+{/* Our Clients Section */}
+<section className="py-5 bg-light">
   <div className="container">
     <h2 className="text-center mb-5 text-with-lines">Our Clients</h2>
-    <div className="row text-center g-4 custom-ms-lg">
+    <div className="row justify-content-center text-center">
       {[
-        "/images/decca-copy.png",
-        "/images/nakshatra.png",
         "/images/paramount.png",
         "/images/tracks.png",
         "/images/back_bencher.png",
       ].map((logo, index) => (
-        <div key={index} className="col-md-2">
+        <div key={index} className="col-6 col-sm-4 col-md-2 mb-3">
           <div className="p-3 rounded-3 bg-white shadow-sm">
             <img
               src={logo}
@@ -198,6 +196,7 @@ function Home() {
     </div>
   </div>
 </section>
+
 
       <section className="py-5" 
       style={{ 

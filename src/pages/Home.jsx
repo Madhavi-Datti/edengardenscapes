@@ -178,15 +178,16 @@ function Home() {
     <h2 className="text-center mb-5 text-with-lines">Our Clients</h2>
     <div className="row justify-content-center text-center">
       {[
-        "/images/paramount.png",
-        "/images/tracks.png",
-        "/images/back_bencher.png",
-      ].map((logo, index) => (
+        { src: "/images/paramount.png", alt: "Paramount" },
+        { src: "/images/tracks.png", alt: "Tracks" },
+        { src: "/images/back_bencher.png", alt: "Back Bencher" },
+        { src: "/images/resonance.jpg", alt: "Resonance" },
+      ].map((client, index) => (
         <div key={index} className="col-6 col-sm-4 col-md-2 mb-3">
           <div className="p-3 rounded-3 bg-white shadow-sm">
             <img
-              src={logo}
-              alt={`Client ${index + 1}`}
+              src={client.src}
+              alt={client.alt}
               className="img-fluid"
               style={{ height: "100px", objectFit: "contain" }}
             />
@@ -196,6 +197,7 @@ function Home() {
     </div>
   </div>
 </section>
+
 
 
       <section className="py-5" 
@@ -269,9 +271,6 @@ function Home() {
         </div>
         <div className="carousel-item">
           <img src="/images/work22.jpg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
-        </div>
-        <div className="carousel-item">
-          <img src="/images/work27.jpg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
         </div>
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">

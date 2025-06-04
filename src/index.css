@@ -361,27 +361,3 @@ html, body {
     transform: translateX(0);
   }
 }
-
-/* Glowing Effect for Text */
-.hero-section h1, 
-.hero-section p {
-  animation: textGlow 1.5s ease-in-out infinite alternate;
-}
-
-@keyframes textGlow {
-  0% {
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.374), 0 0 10px rgba(60, 255, 0, 0.534);
-  }
-  100% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(15, 250, 54, 0.7);
-  }
-}
-@media (min-width: 992px) {
-  .custom-ms-lg {
-    margin-left: 120px !important;
-  }
-}
-
-.bg-overlay {
-  background: rgba(23, 23, 23, 0.269); /* Dark overlay for better text readability */
-}

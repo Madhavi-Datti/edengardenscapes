@@ -10,7 +10,6 @@ import {
   Facebook,
   Youtube,
 } from "lucide-react";
-import logo_transparent from "../assets/logo_transparent.png";
 import "../index.css";
 
 const Footer = () => {
@@ -21,7 +20,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
           <h5 className="mb-4 px-4 py-0">Eden GardenScapes</h5>
-          <div className="align-items-center align-items-lg-start"> <img src={logo_transparent} alt="My Logo" className="footer-logo" /></div>
+          <div className="align-items-center align-items-lg-start"> <img src="/images/logo_transparent.png" alt="My Logo" className="footer-logo" /></div>
            
           </div>
 

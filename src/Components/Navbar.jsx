@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
-import logo_transparent from '../assets/logo_transparent.png';
 import '../index.css';
 
 const Navbar = () => {
@@ -16,7 +15,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <div className="container mb-2">
     <Link className="navbar-brand d-flex align-items-center" to="/">
-  <img src={logo_transparent} alt="My Logo" className="ms-0"
+  <img src="/images/logo_transparent.png" alt="My Logo" className="ms-0"
   style={{ height: "40px" }} />
   <span 
     className="fw-bold ms-0" 

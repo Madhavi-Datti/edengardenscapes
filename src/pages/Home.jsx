@@ -182,8 +182,12 @@ function Home() {
         { src: "/images/tracks.png", alt: "Tracks" },
         { src: "/images/back_bencher.png", alt: "Back Bencher" },
         { src: "/images/resonance.jpg", alt: "Resonance" },
+        { src: "/images/smr_estate.png", alt: "SMR Estates" },
+        { src: "/images/deccan.png", alt: "Deccan Serai" },
+        { src: "/images/surya_durga.png", alt: "Surya Durga Enterprises" },
+        { src: "/images/nisi.png", alt: "NISI" },
       ].map((client, index) => (
-        <div key={index} className="col-6 col-sm-4 col-md-2 mb-3">
+        <div key={index} className="col-6 col-md-3 mb-3">
           <div className="p-3 rounded-3 bg-white shadow-sm">
             <img
               src={client.src}
@@ -197,6 +201,7 @@ function Home() {
     </div>
   </div>
 </section>
+
 
 
 

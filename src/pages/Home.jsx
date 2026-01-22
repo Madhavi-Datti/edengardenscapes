@@ -176,7 +176,8 @@ function Home() {
 <section className="py-5 bg-light">
   <div className="container">
     <h2 className="text-center mb-5 text-with-lines">Our Clients</h2>
-    <div className="row justify-content-center text-center">
+
+    <div className="row row-cols-2 row-cols-md-5 justify-content-center text-center">
       {[
         { src: "/images/paramount.png", alt: "Paramount" },
         { src: "/images/tracks.png", alt: "Tracks" },
@@ -186,8 +187,10 @@ function Home() {
         { src: "/images/deccan.png", alt: "Deccan Serai" },
         { src: "/images/surya_durga.png", alt: "Surya Durga Enterprises" },
         { src: "/images/nisi.png", alt: "NISI" },
+        { src: "/images/akashpride.png", alt: "Akarsh Pride" },
+        { src: "/images/beacon.png", alt: "Beacon" },
       ].map((client, index) => (
-        <div key={index} className="col-6 col-md-3 mb-3">
+        <div key={index} className="col mb-4">
           <div className="p-3 rounded-3 bg-white shadow-sm">
             <img
               src={client.src}
@@ -201,6 +204,7 @@ function Home() {
     </div>
   </div>
 </section>
+
 
 
 

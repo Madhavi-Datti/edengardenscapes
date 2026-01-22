@@ -80,7 +80,7 @@ const Footer = () => {
             {/* Social Links */}
             <div className="d-flex justify-content-center justify-content-lg-start gap-3">
               <Link
-                to="https://www.instagram.com/eden_gardenscapes?igsh=cTh5dDVldGZwcXI2"
+                to="https://www.instagram.com/edengardenscapes?igsh=cTh5dDVldGZwcXI2"
                 className="social-link instagram"
               >
                 <Instagram size={24} />

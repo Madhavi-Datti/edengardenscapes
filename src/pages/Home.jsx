@@ -189,6 +189,12 @@ function Home() {
         { src: "/images/nisi.png", alt: "NISI" },
         { src: "/images/akashpride.png", alt: "Akarsh Pride" },
         { src: "/images/beacon.png", alt: "Beacon" },
+        { src: "/images/bevigilant.png", alt: "Be Vigilant" },
+        { src: "/images/deltatech.png", alt: "Delta Technology" },
+        { src: "/images/praneeth.png", alt: "Praneeth" },
+        { src: "/images/praneethsolitaire.png", alt: "Praneeth Solitaire" },
+        { src: "/images/tudorken.png", alt: "Tudor Ken" },
+
       ].map((client, index) => (
         <div key={index} className="col mb-4">
           <div className="p-3 rounded-3 bg-white shadow-sm">

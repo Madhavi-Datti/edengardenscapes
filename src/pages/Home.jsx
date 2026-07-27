@@ -287,6 +287,48 @@ function Home() {
         <div className="carousel-item">
           <img src="/images/work22.jpg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
         </div>
+                <div className="carousel-item">
+          <img src="/images/work26.jpeg" loading="lazy" alt="Gallery Image 4" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
+        <div className="carousel-item">
+          <img src="/images/work27.jpeg" loading="lazy" alt="Gallery Image 5" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
+        <div className="carousel-item">
+          <img src="/images/work28.jpeg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
+        <div className="carousel-item">
+          <img src="/images/work29.jpeg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
+        <div className="carousel-item">
+          <img src="/images/work30.jpeg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
+                <div className="carousel-item">
+          <img src="/images/work31.jpg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
+                <div className="carousel-item">
+          <img src="/images/work32.jpeg" loading="lazy" alt="Gallery Image 4" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
+        <div className="carousel-item">
+          <img src="/images/work33.jpeg" loading="lazy" alt="Gallery Image 5" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
+        <div className="carousel-item">
+          <img src="/images/work34.jpeg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
+        <div className="carousel-item">
+          <img src="/images/work35.jpeg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
+        <div className="carousel-item">
+          <img src="/images/work36.jpeg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
+                <div className="carousel-item">
+          <img src="/images/work37.jpeg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
+        <div className="carousel-item">
+          <img src="/images/work38.jpeg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
+        <div className="carousel-item">
+          <img src="/images/work39.jpeg" loading="lazy" alt="Gallery Image 6" className="d-block w-100 img-fluid rounded shadow" />
+        </div>
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>

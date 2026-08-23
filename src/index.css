@@ -361,3 +361,70 @@ html, body {
     transform: translateX(0);
   }
 }
+
+.logo-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+  animation: scrollLogos 30s linear infinite;
+}
+
+.client-logo {
+  flex: 0 0 180px;
+}
+
+.client-logo > div {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-logo img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Automatic scrolling */
+@keyframes scrollLogos {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 12px));
+  }
+}
+
+/* Pause when mouse is over the logos */
+.logo-slider:hover .logo-track {
+  animation-play-state: paused;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .client-logo {
+    flex: 0 0 150px;
+  }
+
+  .client-logo > div {
+    height: 110px;
+  }
+
+  .client-logo img {
+    height: 80px;
+  }
+
+  .logo-track {
+    gap: 16px;
+    animation-duration: 25s;
+  }
+}
+

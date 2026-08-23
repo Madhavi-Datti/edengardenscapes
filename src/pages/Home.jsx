@@ -173,7 +173,7 @@ function Home() {
         </div>
         </section>
 {/* Our Clients Section */}
-<section className="py-5 bg-light">
+{/* <section className="py-5 bg-light">
   <div className="container">
     <h2 className="text-center mb-5 text-with-lines">Our Clients</h2>
 
@@ -194,6 +194,7 @@ function Home() {
         { src: "/images/praneeth.png", alt: "Praneeth" },
         { src: "/images/praneethsolitaire.png", alt: "Praneeth Solitaire" },
         { src: "/images/tudorken.png", alt: "Tudor Ken" },
+        { src: "/images/nuemark-logo.png", alt: "Nuemark developers" },
 
       ].map((client, index) => (
         <div key={index} className="col mb-4">
@@ -209,7 +210,74 @@ function Home() {
       ))}
     </div>
   </div>
+</section> */}
+<section className="py-5 bg-light">
+  <div className="container">
+    <h2 className="text-center mb-5 text-with-lines">Our Clients</h2>
+
+    <div className="logo-slider">
+      <div className="logo-track">
+        {[
+          { src: "/images/paramount.png", alt: "Paramount" },
+          { src: "/images/tracks.png", alt: "Tracks" },
+          { src: "/images/back_bencher.png", alt: "Back Bencher" },
+          { src: "/images/resonance.jpg", alt: "Resonance" },
+          { src: "/images/smr_estate.png", alt: "SMR Estates" },
+          { src: "/images/deccan.png", alt: "Deccan Serai" },
+          { src: "/images/surya_durga.png", alt: "Surya Durga Enterprises" },
+          { src: "/images/nisi.png", alt: "NISI" },
+          { src: "/images/akashpride.png", alt: "Akarsh Pride" },
+          { src: "/images/beacon.png", alt: "Beacon" },
+          { src: "/images/bevigilant.png", alt: "Be Vigilant" },
+          { src: "/images/deltatech.png", alt: "Delta Technology" },
+          { src: "/images/praneeth.png", alt: "Praneeth" },
+          { src: "/images/praneethsolitaire.png", alt: "Praneeth Solitaire" },
+          { src: "/images/tudorken.png", alt: "Tudor Ken" },
+          { src: "/images/nuemark-logo.png", alt: "Nuemark developers" },
+        ].map((client, index) => (
+          <div className="client-logo" key={index}>
+            <div className="p-3 rounded-3 bg-white shadow-sm">
+              <img
+                src={client.src}
+                alt={client.alt}
+              />
+            </div>
+          </div>
+        ))}
+
+        {/* Duplicate logos for seamless scrolling */}
+        {[
+          { src: "/images/paramount.png", alt: "Paramount" },
+          { src: "/images/tracks.png", alt: "Tracks" },
+          { src: "/images/back_bencher.png", alt: "Back Bencher" },
+          { src: "/images/resonance.jpg", alt: "Resonance" },
+          { src: "/images/smr_estate.png", alt: "SMR Estates" },
+          { src: "/images/deccan.png", alt: "Deccan Serai" },
+          { src: "/images/surya_durga.png", alt: "Surya Durga Enterprises" },
+          { src: "/images/nisi.png", alt: "NISI" },
+          { src: "/images/akashpride.png", alt: "Akarsh Pride" },
+          { src: "/images/beacon.png", alt: "Beacon" },
+          { src: "/images/bevigilant.png", alt: "Be Vigilant" },
+          { src: "/images/deltatech.png", alt: "Delta Technology" },
+          { src: "/images/praneeth.png", alt: "Praneeth" },
+          { src: "/images/praneethsolitaire.png", alt: "Praneeth Solitaire" },
+          { src: "/images/tudorken.png", alt: "Tudor Ken" },
+          { src: "/images/nuemark-logo.png", alt: "Nuemark developers" },
+        ].map((client, index) => (
+          <div className="client-logo" key={`duplicate-${index}`}>
+            <div className="p-3 rounded-3 bg-white shadow-sm">
+              <img
+                src={client.src}
+                alt={client.alt}
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
 </section>
+
 
 
 

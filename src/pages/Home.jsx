@@ -234,6 +234,9 @@ function Home() {
           { src: "/images/praneethsolitaire.png", alt: "Praneeth Solitaire" },
           { src: "/images/tudorken.png", alt: "Tudor Ken" },
           { src: "/images/nuemark-logo.png", alt: "Nuemark developers" },
+          {src: "/images/ravel.png", alt: "Ravel" },
+          { src: "/images/stalwart.png", alt: "Stalwart" },
+          { src: "/images/icrisat.png", alt: "ICRISAT" },
         ].map((client, index) => (
           <div className="client-logo" key={index}>
             <div className="p-3 rounded-3 bg-white shadow-sm">
@@ -263,6 +266,9 @@ function Home() {
           { src: "/images/praneethsolitaire.png", alt: "Praneeth Solitaire" },
           { src: "/images/tudorken.png", alt: "Tudor Ken" },
           { src: "/images/nuemark-logo.png", alt: "Nuemark developers" },
+          {src: "/images/ravel.png", alt: "Ravel" },
+          { src: "/images/stalwart.png", alt: "Stalwart" },
+          { src: "/images/icrisat.png", alt: "ICRISAT" },
         ].map((client, index) => (
           <div className="client-logo" key={`duplicate-${index}`}>
             <div className="p-3 rounded-3 bg-white shadow-sm">
